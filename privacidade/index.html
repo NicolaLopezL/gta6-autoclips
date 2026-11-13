@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · GTA6 AutoClips</title>
+<meta name="description" content="Política de Privacidade do GTA6 AutoClips (Brasil e Colômbia): quais dados das contas conectadas são usados, para quê, como são protegidos e como pedir a exclusão.">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+<main>
+<header>
+  <p class="kicker">GTA6 AutoClips</p>
+  <h1>Política de Privacidade</h1>
+  <p class="meta">Vigente a partir de 13 de novembro de 2026 · Ambientes: Brasil (GTA6 CLIPSBR) e Colômbia · <a href="#es">Versión en español</a></p>
+</header>
+
+<section>
+<h2>1. Quem somos</h2>
+<p>O GTA6 AutoClips é um software de uso privado, operado por <b>Nicola Lopez Linares</b> ("nós"), que roda no computador do próprio responsável para produzir e publicar vídeos curtos sobre GTA VI nos canais do projeto: <b>GTA6 CLIPSBR</b> (Brasil) e <b>canal do projeto na Colômbia (nome a definir)</b> (Colômbia).</p>
+<p>O GTA6 AutoClips não é oferecido ao público: as únicas contas de redes sociais conectadas a ele são as contas dos próprios canais do projeto, conectadas pelo responsável.</p>
+<p>Contato para assuntos de privacidade: <a href="mailto:brgtaclips@gmail.com"><b>brgtaclips@gmail.com</b></a>.</p>
+</section>
+
+<section>
+<h2>2. Como as contas são conectadas</h2>
+<p>A conexão usa somente os fluxos oficiais de autorização (OAuth 2.0) do Google/YouTube, do Instagram (Meta) e do TikTok. O login acontece na página da própria plataforma; o GTA6 AutoClips <b>nunca recebe nem armazena a senha</b> dessas contas. Ao final da autorização, a plataforma entrega um token de acesso com as permissões que você aceitou.</p>
+<p>Cada país tem conexões separadas: uma conta conectada no ambiente Brasil não é usada no ambiente Colômbia, e a mesma conta não pode ser ligada aos dois.</p>
+</section>
+
+<section>
+<h2>3. Quais dados acessamos e para quê</h2>
+<table>
+<thead><tr><th>Plataforma</th><th>Permissões solicitadas</th><th>Dados lidos da conta</th></tr></thead>
+<tbody>
+<tr><td>YouTube</td><td><code>youtube.upload</code>, <code>youtube.readonly</code></td><td>ID do canal, nome do canal, URL personalizada (@) e imagem do canal</td></tr>
+<tr><td>Instagram</td><td><code>instagram_business_basic</code>, <code>instagram_business_content_publish</code></td><td>ID da conta, nome de usuário, nome, foto do perfil e tipo de conta (profissional ou não)</td></tr>
+<tr><td>TikTok</td><td><code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code></td><td>Identificador da conta (open_id), nome de exibição, nome de usuário, foto do perfil e as opções de privacidade de publicação permitidas</td></tr>
+</tbody>
+</table>
+<p>Usamos esses dados apenas para:</p>
+<ul>
+<li>mostrar no painel qual conta está conectada em cada país e confirmar que é a conta certa antes da primeira publicação;</li>
+<li>verificar se a conexão e as permissões continuam válidas (função "Testar conexão", que lê a conta e as permissões sem publicar nada);</li>
+<li>publicar, na conta do país correspondente, os vídeos produzidos pelo GTA6 AutoClips e aprovados pelo responsável, com título, descrição e hashtags gerados pelo sistema;</li>
+<li>registrar o resultado de cada publicação (plataforma, identificador e link da publicação, data e status);</li>
+<li>bloquear publicações na conta errada (por exemplo, um vídeo do Brasil na conta da Colômbia).</li>
+</ul>
+<p><b>Não lemos</b> mensagens diretas, seguidores, listas de amigos, comentários ou dados de outras pessoas nas contas do Instagram e do TikTok. <b>Não vendemos</b> dados, não os usamos para publicidade e não os compartilhamos com terceiros. Os dados das contas não são enviados a serviços de inteligência artificial.</p>
+</section>
+
+<section>
+<h2>4. Publicação automatizada</h2>
+<p>O GTA6 AutoClips produz vídeos curtos e os coloca numa fila de publicação. Nenhum vídeo é publicado sem a aprovação do responsável. Quando a plataforma permite, a publicação é agendada nela mesma (por exemplo, o horário de publicação do YouTube); quando não permite, o envio é feito pelo computador do responsável no horário definido. Os vídeos publicados são conteúdo dos próprios canais do projeto, com crédito aos criadores originais quando houver trechos de terceiros.</p>
+</section>
+
+<section>
+<h2>5. Dados públicos de terceiros usados na produção</h2>
+<p>Para encontrar conteúdos sobre GTA VI, o sistema consulta, pelas APIs oficiais (YouTube Data API, Twitch e Kick) e por feeds públicos de notícias, informações públicas de vídeos e transmissões: títulos, descrições, nome do canal, data, número de visualizações e, no YouTube, comentários públicos com marcação de tempo, que servem para localizar os melhores momentos de um vídeo. Esses dados ficam no computador do responsável e não são publicados como tais. Trechos de vídeos de terceiros só são usados conforme a autorização ou a política pública de cortes de cada criador, com crédito.</p>
+</section>
+
+<section>
+<h2>6. Onde e como os dados são guardados</h2>
+<ul>
+<li>Tudo fica no computador do responsável. Não há servidor na nuvem do GTA6 AutoClips.</li>
+<li>Os tokens de acesso ficam no Gerenciador de Credenciais do Windows, protegido pelo próprio Windows para a conta de usuário do responsável. Eles nunca são gravados no banco de dados, em arquivos de texto, em registros (logs) nem enviados ao navegador.</li>
+<li>Os dados públicos da conta (nome, @, foto), o estado da conexão, o histórico de autenticação e o histórico de publicações ficam num banco de dados local (SQLite), separado por país.</li>
+<li>O painel de controle exige senha (guardada apenas como hash) e só é acessível no próprio computador ou pela rede privada do responsável (Tailscale, com HTTPS). Ele não fica exposto à internet pública.</li>
+</ul>
+</section>
+
+<section>
+<h2>7. Por quanto tempo guardamos</h2>
+<ul>
+<li><b>Token de acesso:</b> até a conta ser desconectada no painel, o acesso ser revogado na própria plataforma ou o token expirar sem renovação.</li>
+<li><b>Dados públicos da conta:</b> enquanto a conta estiver conectada. Ao desconectar, nome, @, foto e permissões são removidos do cadastro da conexão.</li>
+<li><b>Histórico de autenticação e de publicações:</b> mantido como registro do canal até um pedido de exclusão (seção 8), quando é apagado.</li>
+</ul>
+</section>
+
+<section>
+<h2>8. Como desconectar e pedir a exclusão dos dados</h2>
+<p>Você pode, a qualquer momento:</p>
+<ol>
+<li><b>Revogar o acesso na própria plataforma:</b> Instagram (Configurações → Segurança → Apps e sites), Google (myaccount.google.com/permissions) ou TikTok (Configurações → Segurança → Apps e serviços). A partir daí o GTA6 AutoClips não consegue mais acessar a conta.</li>
+<li><b>Pedir a exclusão de todos os dados</b> pelo e-mail <a href="mailto:brgtaclips@gmail.com"><b>brgtaclips@gmail.com</b></a>, com o assunto "Exclusão de dados – GTA6 AutoClips", informando a plataforma e o nome de usuário da conta. A exclusão apaga o token, o cadastro da conta, o histórico de autenticação e a ligação da conta com as publicações. Respondemos confirmando a exclusão em até <b>15 dias</b>.</li>
+</ol>
+<p>Instruções detalhadas: <a href="../exclusao-de-dados/">Exclusão de dados</a>.</p>
+</section>
+
+<section>
+<h2>9. Seus direitos</h2>
+<p>Você pode pedir acesso, correção ou exclusão dos seus dados pelo e-mail acima. Também pode exercer os direitos previstos na legislação aplicável, como a Lei Geral de Proteção de Dados (Lei 13.709/2018) no Brasil e a Lei 1581 de 2012 na Colômbia.</p>
+</section>
+
+<section>
+<h2>10. Alterações</h2>
+<p>Se esta política mudar, a nova versão é publicada nesta página com a data de vigência atualizada.</p>
+</section>
+
+<hr>
+
+<section id="es" lang="es">
+<h2>Política de Privacidad (español)</h2>
+<p class="meta">Vigente desde 13 de noviembre de 2026 · Ambientes: Brasil (GTA6 CLIPSBR) y Colombia</p>
+<p><b>Quiénes somos.</b> GTA6 AutoClips es un software de uso privado, operado por <b>Nicola Lopez Linares</b>, que funciona en el computador del propio responsable para producir y publicar videos cortos sobre GTA VI en los canales del proyecto: GTA6 CLIPSBR (Brasil) y <b>canal del proyecto en Colombia (nombre por definir)</b> (Colombia). No se ofrece al público: las únicas cuentas conectadas son las de los propios canales del proyecto. Contacto: <a href="mailto:brgtaclips@gmail.com"><b>brgtaclips@gmail.com</b></a>.</p>
+<p><b>Conexión de cuentas.</b> Solo se usan los flujos oficiales de autorización (OAuth 2.0) de Google/YouTube, Instagram (Meta) y TikTok. El inicio de sesión ocurre en la página de la plataforma; GTA6 AutoClips nunca recibe ni guarda contraseñas. Cada país tiene conexiones separadas y una misma cuenta no puede vincularse a los dos.</p>
+<p><b>Datos que leemos.</b> YouTube (permisos youtube.upload y youtube.readonly): ID, nombre, URL personalizada e imagen del canal. Instagram (instagram_business_basic e instagram_business_content_publish): ID, nombre de usuario, nombre, foto de perfil y tipo de cuenta. TikTok (user.info.basic, video.upload y video.publish): identificador de la cuenta, nombre visible, nombre de usuario, foto de perfil y opciones de privacidad de publicación permitidas.</p>
+<p><b>Finalidades.</b> Mostrar qué cuenta está conectada en cada país y confirmarla antes de la primera publicación; verificar que la conexión y los permisos siguen válidos ("Probar conexión", sin publicar nada); publicar en la cuenta del país correspondiente los videos aprobados por el responsable; registrar el resultado de cada publicación; y bloquear publicaciones en la cuenta equivocada. No leemos mensajes directos, seguidores, comentarios ni datos de otras personas en Instagram o TikTok. No vendemos, no usamos para publicidad ni compartimos datos con terceros, y no los enviamos a servicios de inteligencia artificial.</p>
+<p><b>Publicación automatizada.</b> Ningún video se publica sin la aprobación del responsable. Cuando la plataforma lo permite, la publicación se programa en ella; si no, el envío lo hace el computador del responsable en el horario definido.</p>
+<p><b>Datos públicos de terceros.</b> Para encontrar contenido sobre GTA VI se consultan, por las API oficiales (YouTube Data API, Twitch y Kick) y fuentes públicas de noticias, datos públicos de videos y transmisiones (títulos, descripciones, nombre del canal, fecha, visualizaciones y, en YouTube, comentarios públicos con marcas de tiempo para ubicar los mejores momentos). Se guardan en el computador del responsable y no se publican como tales.</p>
+<p><b>Almacenamiento y seguridad.</b> Todo queda en el computador del responsable, sin servidor en la nube. Los tokens se guardan en el Administrador de credenciales de Windows, protegido por Windows para la cuenta del responsable, y nunca en la base de datos, archivos de texto, registros o el navegador. Los demás datos quedan en una base de datos local (SQLite) separada por país. El panel exige contraseña y solo es accesible en el propio computador o por la red privada del responsable (Tailscale, con HTTPS).</p>
+<p><b>Conservación.</b> Token: hasta desconectar la cuenta, revocar el acceso en la plataforma o su vencimiento. Datos públicos de la cuenta: mientras esté conectada (al desconectar se eliminan del registro de la conexión). Historial de autenticación y de publicaciones: hasta una solicitud de eliminación.</p>
+<p><b>Desconexión y eliminación.</b> Puede revocar el acceso en la propia plataforma (Instagram: Configuración → Seguridad → Apps y sitios web; Google: myaccount.google.com/permissions; TikTok: Configuración → Seguridad → Apps y servicios) o pedir la eliminación de todos los datos al correo <a href="mailto:brgtaclips@gmail.com"><b>brgtaclips@gmail.com</b></a>, con el asunto "Eliminación de datos – GTA6 AutoClips", indicando la plataforma y el nombre de usuario. Confirmamos la eliminación en un plazo de <b>15 días</b>. Instrucciones: <a href="../exclusao-de-dados/#es">Eliminación de datos</a>.</p>
+<p><b>Derechos.</b> Puede solicitar acceso, corrección o eliminación de sus datos al correo indicado, además de los derechos previstos en la legislación aplicable, como la Ley 1581 de 2012 en Colombia y la Ley 13.709/2018 (LGPD) en Brasil.</p>
+</section>
+</main>
+<footer><p>GTA6 AutoClips · <a href="../exclusao-de-dados/">Exclusão de dados</a></p></footer>
+</body>
+</html>
